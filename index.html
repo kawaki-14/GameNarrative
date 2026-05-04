@@ -282,6 +282,11 @@ The families scream in terror, pressing against the humming Elixir machines. The
     if (window.bgMusic) {
         window.bgMusic.pause();
         window.bgMusic.src = &quot;boss.mp3&quot;;
+        
+        window.bgMusic.load();
+        window.bgMusic.play().catch(function(e) {
+            console.log(&quot;Cần click để phát nhạc mới:&quot;, e);
+        });
     }
 &lt;/script&gt;
 

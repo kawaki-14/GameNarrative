@@ -334,17 +334,16 @@ The first fracture has formed.
 
 [[Replay Chapter 1.|MalphasDL]]</tw-passagedata><tw-passagedata pid="26" name="Start" tags="1" position="525,225" size="100,100">&lt;script&gt;
     if (!window.bgMusic) {
-        window.bgMusic = new Audio(&quot;https://www.image2url.com/r2/default/audio/1777357551239-dec6bc72-94db-4951-8bd3-3e4a149519d8.mp3&quot;);
+        window.bgMusic = new Audio(&quot;ethereal.mp3&quot;);
         window.bgMusic.volume = 0.5;
         window.bgMusic.loop = true;
     }
 
-    // Hàm này sẽ chạy khi bạn click bất kỳ đâu trong game
     document.addEventListener(&#39;click&#39;, function() {
         window.bgMusic.play().catch(function(error) {
             console.log(&quot;Phát nhạc thất bại:&quot;, error);
         });
-    }, { once: true }); // { once: true } để nó chỉ kích hoạt một lần duy nhất
+    }, { once: true });
 &lt;/script&gt;
 
 The Grand Plaza of Luminaria stretches beneath the eternal golden disc of the Aegis. Thousands of white rose petals swirl in a perfectly choreographed wind as you kneel on cold marble, the weight of your ceremonial plate armor pressing into your knees.

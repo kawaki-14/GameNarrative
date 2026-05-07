@@ -1,0 +1,491 @@
+:: StoryTitle
+Luminaria Chapter1
+
+
+:: StoryData
+{
+  "ifid": "5F5295EF-35AF-496E-BD33-19F411DFBCF3",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start",
+  "tag-colors": {
+    "1": "orange",
+    "2": "yellow",
+    "3": "red",
+    "4": "green",
+    "5": "blue",
+    "6": "purple",
+    "7": "red",
+    "8": "green",
+    "forest": "purple",
+    "lake": "yellow"
+  },
+  "zoom": 1
+}
+
+
+:: BadEnd {"position":"475,1475","size":"100,100"}
+You lower your sword and step back.
+
+The soldiers move without hesitation. Spears flash in the dim light as screams fill the chamber. One by one, the families fall. Blood flows and mixes with the golden Elixir pulsing through the pipes.
+
+The Veiled Heretic looks at you one final time.
+"So this is the Light you serve…"
+
+Moments later, Malphas arrives. He places a heavy hand on your shoulder, his voice warm with approval.
+"Well done, my pupil. You have proven your unwavering faith. The Light is stronger because of knights like you."
+
+You are praised as a hero. The incident is quickly buried. Above, the golden Aegis shines brighter than ever.
+
+Yet that night, as you kneel in prayer at the Shrine, you notice a faint violet vein pulsing beneath the skin of your wrist. The Corruption bar flickers briefly… before the holy light suppresses it.
+
+You tell yourself it is nothing.
+
+Achievement Unlocked: "Faithful Blade"
+
+The lie endures. The machine grinds on. And you remain its willing servant… for now.
+
+[[Try again with a different choice.|MeetTheHeretics]]
+
+
+:: BossFightPhase1 [8] {"position":"600,1850","size":"100,100"}
+Steel clashes against divine gold. Malphas’s staff blazes with radiant power, each strike shaking the chamber.
+
+[[Perfect Parry|BossFightPhase2]]
+[[Dodge and strike|BossFightPhase2]]
+
+
+:: BossFightPhase2 [8] {"position":"600,1975","size":"100,100"}
+With a roar of anguish, Malphas unleashes ''"Divine Judgement"'' — a colossal pillar of blinding light that shatters the floor beneath your feet.
+
+You plummet into darkness. Your armor cracks. Your sword snaps in two. A cold violet energy begins to seep from your arm…
+
+//''Corruption has begun.''//
+
+[[Continue|EndingChapter1]]
+
+
+:: BossMalphas [8] {"position":"600,1725","size":"100,100"}
+<script>
+    if (window.bgMusic) {
+        window.bgMusic.pause();
+        window.bgMusic.src = "https://www.image2url.com/r2/default/audio/1777359943350-51b053bc-da4d-4e4a-a660-8364e2dd8692.mp3";
+    }
+</script>
+
+<img src="https://files.catbox.moe/iktgt6.png" class="standing-sprite">
+<div class="char-name">High Inquisitor Malphas</div>
+High Inquisitor Malphas emerges from a hidden passage, his voice heavy with sorrow.
+
+"I was once your teacher… Why have you betrayed the Light?"
+
+[[Draw your blade and fight him|BossFightPhase1]]
+
+
+:: Combat [2] {"position":"600,725","size":"100,100"}
+Your blade feels light and eager in your hands as you face the Church’s training dummies.
+
+[[Unleash a swift five-hit combo.|CombatCombo]]
+[[Practice your parry timing.|CombatParry]]
+
+[[Proceed to the shrine|ReachingTheShrine]]
+
+
+:: CombatAttack [4] {"position":"475,975","size":"100,100"}
+Your greatsword bites deep into the creature’s shoulder, spraying violet ichor across the stone. But the beast is faster than it looks. Its teeth sink into your greave before you can pull away. A sharp sting flares across your leg.
+
+The Crawler collapses, twitching, into a heap of broken limbs.
+
+[[Venture deeper|Deeper]]
+
+
+:: CombatCombo [2] {"position":"475,725","size":"100,100"}
+You unleash a fluid five-strike combo. The wooden dummy splinters and shatters under the force of your blade.
+
+[[Continue|Combat]]
+
+
+:: CombatParry [2] {"position":"725,725","size":"100,100"}
+A dummy suddenly lunges. You time your parry perfectly. The impact sends it staggering, and you follow with a devastating finishing blow.
+
+//Perfect Parry learned.//
+
+[[Continue|Combat]]
+
+
+:: CombatParrySuccess [4] {"position":"725,975","size":"100,100"}
+You hold your ground, eyes locked on the beast's twitching muscles. As it lunges, you snap your blade upward in a precise arc of golden energy. 
+
+//''CLANG. ''//
+
+The impact reverberates through your arms, sending the Crawler reeling back, its stagger meter flashing crimson as it loses all balance.
+
+You don't give it a second to breathe. You deliver a brutal finishing strike through its core. The monster let out a final, silent shriek before dissolving into a cloud of harmless violet ash
+
+[[Venture deeper|Deeper]]
+
+
+
+:: Deeper [5] {"position":"600,1100","size":"100,100"}
+As you descend further, the overhead gold light withers away. It is replaced by a diseased purple radiance and the sharp, iron scent of blood.
+
+[[Press on|MeetTheHeretics]]
+
+
+:: ElixirTruth [6] {"position":"1100,1600","size":"100,100"}
+Peering through the crack, you witness a nightmare: living citizens strapped to cruel machines, their life force steadily drained into glowing golden tubes. This is the true source of the "holy" Elixir that sustains all of Luminaria.
+
+Your stomach churns. The city’s radiant light is built upon stolen souls.
+
+[[Continue watching|TheChoice]]
+
+
+:: EndingChapter1 {"position":"600,2100","size":"100,100"}
+You crash heavily onto the broken ground of the Outer Wastes. Far above, the golden Aegis of Radiance flickers uncertainly against the void.
+
+Your once-pristine white armor is shattered and stained. The broken blade lies beside you. From the wound on your arm, violet energy pulses and spreads slowly across your skin.
+
+The Light that once protected you now feels distant… almost afraid.
+
+Achievement Unlocked: "The False Light"
+
+The first fracture has formed.
+
+//To be continue...//
+
+[[Replay Chapter 1.|MalphasDL]]
+
+
+:: HereticLies [5] {"position":"1025,1475","size":"100,100"}
+<img src="https://files.catbox.moe/z4gwfg.png" class="standing-sprite">
+<div class="char-name">The Mysterious Man</div>
+"A gift?" The heretic gestures toward a narrow crack in the wall, where an amber glow pulses sickly.
+
+"A god does not need a slaughterhouse. Look closely, Knight. Are you protecting the Light… or guarding a machine that grinds souls into Elixir?"
+
+[[Look through the crack|ElixirTruth]]
+
+
+:: HereticReplies [5] {"position":"1100,1350","size":"100,100"}
+<img src="https://files.catbox.moe/z4gwfg.png" class="standing-sprite">
+<div class="char-name">The Mysterious Man</div>
+The Heretic lets out a dry, rasping laugh.
+
+"Alive? Is that what you call this existence? You wear their ‘Light’ like a badge of honor, yet you have never questioned what truly fuels it."
+
+He steps closer.
+
+"Tell me, Holy Knight… in five hundred years of so-called peace, has the Church ever told you the true origin of the Elixir?"
+
+[["It is a gift from the Eternal Radiance."|HereticLies]]
+[["I am here to purge, not to debate history."|HereticLies]]
+[["What are you talking about..."|HereticTruth]]
+
+
+
+:: HereticTruth [5] {"position":"1175,1475","size":"100,100"}
+<img src="https://files.catbox.moe/z4gwfg.png" class="standing-sprite">
+<div class="char-name">The Mysterious Man</div>
+"Knowledge is a heavy burden," the Heretic says quietly. "Once you see the truth, the golden walls of Luminaria will never look the same."
+
+He points to the jagged fissure.
+
+"Look. See what truly powers your utopia."
+
+[[Look through the crack|ElixirTruth]]
+
+
+:: IntoTheSewer [4] {"position":"600,975","size":"100,100"}
+<script>
+    if (window.bgMusic) {
+        window.bgMusic.pause();
+        window.bgMusic.src = "https://www.image2url.com/r2/default/audio/1777359539788-880c77ec-36f4-4c4b-8c54-53895224a840.mp3";
+        window.bgMusic.play();
+    }
+</script>
+
+<img src="https://files.catbox.moe/5cqx48.png" class="standing-sprite">
+
+The sweet air of Luminaria vanishes. In its place is the heavy stench of ozone, rusted iron, and rotting flesh. The golden light from above fades, replaced by sickly purple veins pulsing along the walls.
+
+A wet skittering sound echoes from the ceiling. A Blighted Crawler drops down — a twisted horror of elongated purple limbs and an unhinging maw filled with jagged teeth. Its milky eyes fixate on the golden glow of your armor.
+
+[[Unleash a Quick Combo|CombatAttack]]
+[[Attempt a Perfect Parry|CombatParrySuccess]]
+
+
+
+:: MalphasDL [1] {"position":"600,350","size":"100,100"}
+<img src="https://files.catbox.moe/iktgt6.png" class="standing-sprite">
+
+<div class="char-name">High Inquisitor Malphas</div>
+"By the blood of the martyrs and the grace of the Eternal Radiance," his warm, fatherly voice echoes across the square, "I dub thee: Holy Knight of the Aegis. Rise, my student. You are no longer merely a man — you are the living barrier between humanity and the hungry Void."
+
+[[“I shall be the Light’s sharpest blade.”|TheFirstMission]]
+[[Rise in silence.|TheFirstMission]]
+
+
+:: MeetTheHeretics [5] {"position":"600,1225","size":"100,100"}
+<script>
+    if (window.bgMusic) {
+        window.bgMusic.pause();
+        window.bgMusic.src = "https://www.image2url.com/r2/default/audio/1777359704154-9363be2a-d814-4c14-a083-8eb7c7b6a737.mp3";
+        window.bgMusic.play();
+    }
+</script>
+
+Faint sobbing echoes through the damp corridors. In a dim iron chamber, a group of ragged families huddles together in terror. They look nothing like the monsters you were ordered to slay — only frightened, desperate people.
+
+[[Obey orders and execute them|BadEnd]]
+[[Observe them quietly|TVH]]
+[[Speak to them|VeiledHeretic]]
+
+
+:: OTW [2] {"position":"600,600","size":"100,100"}
+You move through the pristine hanging gardens and leap across shining marble rooftops. The city gleams with divine perfection around you. Your body instinctively recalls the rigorous training of the Holy Knights.
+
+You dash across gaps with practiced ease, leap higher by holding your jump, and rebound off walls with a powerful kick. The movements feel natural — as if the Light itself guides your steps.
+
+Training dummies line the final stretch of your path.
+
+[[Approach the dummies.|Combat]]
+
+
+:: ReachingTheShrine [3] {"position":"600,850","size":"100,100"}
+At the iron gate leading downward, a radiant Shrine of the Eternal Radiance stands defiant against the growing dampness. You kneel before it. Golden etchings flare to life, bathing your armor in a warm, heatless glow.
+
+Your soul feels anchored to this Light. Should you fall in the darkness below, the Aegis will call you back here.
+
+//Spawn point harmonized.//
+
+[[Descend into the shadows of the Eastern Sewers|IntoTheSewer]]
+
+
+:: Reply [5] {"position":"975,1350","size":"100,100"}
+<img src="https://files.catbox.moe/4jzvyy.png" class="mcstanding-sprite">
+You tighten the grip on your greatsword, the golden light of your armor flickering in the damp air. 
+
+"The Church warned me of your silver tongues, heretic. You hide in filth while we bleed to protect the Aegis."
+
+[[Continue|HereticReplies]]
+
+
+
+:: Start [1] {"position":"525,225","size":"100,100"}
+<script>
+    if (!window.bgMusic) {
+        window.bgMusic = new Audio();
+        window.bgMusic.volume = 0.5;
+        window.bgMusic.loop = true;
+    }
+
+    window.bgMusic.src = "https://www.image2url.com/r2/default/audio/1777357551239-dec6bc72-94db-4951-8bd3-3e4a149519d8.mp3";
+    
+    window.bgMusic.play().catch(function() {
+        console.log("Music is ready");
+    });
+</script>
+
+The Grand Plaza of Luminaria stretches beneath the eternal golden disc of the Aegis. Thousands of white rose petals swirl in a perfectly choreographed wind as you kneel on cold marble, the weight of your ceremonial plate armor pressing into your knees.
+
+[[Continue.|Start 2]]
+
+
+:: Start 2 [1] {"position":"675,225","size":"100,100"}
+High Inquisitor Malphas stands before you. He slowly lowers the massive golden greatsword until its humming edge rests upon your pauldron.
+
+[[Continue.|MalphasDL]]
+
+
+:: TVH [5] {"position":"725,1350","size":"100,100"}
+An old figure steps out from the shadows. His robes are torn and his body shows signs of Void corruption, yet his eyes remain sharp and clear.
+
+[[Reply to the mysterious man|VeiledHereticDL]]
+
+
+:: TheChoice [7] {"position":"600,1600","size":"100,100"}
+Suddenly, Church soldiers burst into the chamber, spears raised.
+
+"Heretics!" one shouts. "By order of the Inquisitor — purge them all!"
+
+The families scream in terror, pressing against the humming Elixir machines. The golden armor of the soldiers now feels cold and merciless.
+
+[[Draw your sword and protect the families.|BossMalphas]] 
+[[Stand aside and obey the Church's decree.|BadEnd]]
+
+
+:: TheFirstMission [1] {"position":"525,475","size":"100,100"}
+The cheers of the crowd fade into the background as a breathless messenger stumbles forward. He whispers urgently to Malphas about a breach in the Eastern Infrastructure — a dangerous seepage of the Void.
+
+Malphas turns his blindfolded gaze toward the eastern spires.
+
+[[Continue.|TheFirstMission2]]
+
+
+:: TheFirstMission2 [1] {"position":"675,475","size":"100,100"}
+<img src="https://files.catbox.moe/iktgt6.png" class="standing-sprite">
+<div class="char-name">High Inquisitor Malphas</div>
+"A test so soon? The Light works in mysterious ways." He places a firm hand on your shoulder. "Go, Knight. Purge this infection before it reaches the Commoners’ Quarter. Grant them the mercy of a swift end."
+
+[[Head to the Eastern Sewers.|OTW]]
+
+
+:: VeiledHeretic [5] {"position":"600,1350","size":"100,100"}
+<img src="https://files.catbox.moe/4jzvyy.png" class="mcstanding-sprite">
+You hesitate, then speak softly: "Are you alright? Why are you hiding here?"
+
+The mysterious man tilts his head slightly before replying as above.
+
+[[Continue|TVH]]
+
+
+:: VeiledHereticDL [5] {"position":"850,1350","size":"100,100"}
+<img src="https://files.catbox.moe/z4gwfg.png" class="standing-sprite">
+<div class="char-name">The Mysterious Man</div>
+"Stay your blade, Knight," he says calmly. "I am not the monster your masters claim me to be."
+
+[[Reply to the mysterious man|Reply]]
+
+
+:: StoryStylesheet [stylesheet]
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400..800&display=swap');
+
+body {
+  font-family: 'EB Garamond', serif;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+tw-story {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  padding-bottom: 5%;
+}
+
+tw-passage {
+  background: rgba(50, 50, 60, 0.9); 
+  border: 4px solid #ffffff;
+  
+  margin: 0;
+  border-radius: 0px;
+  padding: 20px 30px;
+  width: 80vw;
+  
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  color: white;
+  line-height: 1.5;
+  z-index: 10;
+  overflow: visible; 
+  
+  box-shadow: 0 0 0 4px rgba(0,0,0,1), 0 10px 20px rgba(0,0,0,0.5);
+  
+  position: relative;
+  
+}
+
+tw-link {
+  display: block;
+  margin-top: 10px;
+  color: #ffde59 !important;
+  text-decoration: none;
+}
+
+tw-link:hover {
+  color: #ffffff !important;
+  border-left: 10px solid #ffde59;
+  padding-left: 10px;
+}
+
+tw-story[tags~="1"] {
+  background-image: url("https://files.catbox.moe/cqonxm.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+tw-story[tags~="2"] {
+  background-image: url("https://files.catbox.moe/8fs430.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+tw-story[tags~="3"] {
+  background-image: url("https://files.catbox.moe/6ouawi.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+tw-story[tags~="4"] {
+  background-image: url("https://files.catbox.moe/ewklcx.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+tw-story[tags~="5"] {
+  background-image: url("https://files.catbox.moe/6bqn30.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+tw-story[tags~="6"] {
+  background-image: url("https://files.catbox.moe/22hwet.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+tw-story[tags~="7"] {
+  background-image url("https://files.catbox.moe/f1kkch.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+tw-story[tags~="8"] {
+  background-image: url("https://files.catbox.moe/n4k9u2.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.char-name {
+  position: absolute;
+  top: -25px;
+  left: 20px;
+  background: #ffffff;
+  color: #000000;
+  padding: 5px 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 2px solid #000;
+  z-index: 10;
+}
+
+.standing-sprite {
+  position: absolute;
+  bottom: 85%; 
+  left: 0; 
+  height: 450px;
+  z-index: -1; 
+  
+  pointer-events: none;
+  image-rendering: pixelated;
+  
+  width: auto; 
+}
+
+.mcstanding-sprite {
+  transform: scaleX(-1);
+  position: absolute;
+  bottom: 85%; 
+  right: 0; 
+  height: 450px;
+  z-index: -1; 
+  
+  pointer-events: none;
+  image-rendering: pixelated;
+  
+  width: auto; 
+}
